@@ -1,0 +1,45 @@
+@import "../App/App.module.scss";
+
+.header {
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    @extend %buttons;
+  }
+
+  @media (min-width: $large) {
+    width: 2560px;
+    display: flex;
+    justify-content: center;
+    .logo {
+      margin-right: 856px;
+    }
+  }
+  @media (max-width: $large) {
+    width: 1024px;
+    padding: 0 60px;
+  }
+  @media (max-width: $medium) {
+    width: 768px;
+    padding: 0 32px;
+  }
+  @media (max-width: $small) {
+    width: 360px;
+    padding: 0 16px;
+  }
+}
+
+.logo {
+  width: 104px;
+  height: 26px;
+}
+
+.buttonBlock {
+  width: 210px;
+  display: flex;
+  justify-content: space-between;
+}
