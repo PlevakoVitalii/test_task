@@ -1,6 +1,7 @@
 import { GetBlock } from '../GetBlock';
 import { Header } from '../Header';
 import InfoBlock from '../InfoBlock/InfoBlock';
+import { PostBlock } from '../PostBlock';
 import style from './App.module.scss';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Header />
         <InfoBlock />
         <GetBlock />
+        <PostBlock />
       </div>
 
     </div>

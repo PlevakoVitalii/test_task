@@ -18,7 +18,6 @@
 
   .cardContainer {
     border-color: #000;
-    width: 1168px;
     min-height: 537px;
     margin-bottom: 29px;
     display: flex;
@@ -35,26 +34,21 @@
 
   @media (max-width: $large) {
     width: 904px;
-    //height: 711px;
     margin: 0 60px;
-    .cardContainer {
-      margin: 0 auto;
-      width: 904px;
-      //height: 537px;
-    }
   }
 
   @media (max-width: $medium) {
-    padding-top: 89px;
+    width: 704px;
+    margin: 0 32px;
     .cardContainer {
-      margin: 0 auto;
-      width: 704px;
-      //height: 794px;
+      min-height: 794px;
     }
   }
   @media (max-width: $small) {
-    margin: 0 auto;
     width: 328px;
-    //height: 1624px;
+    margin: 0 16px;
+    .cardContainer {
+      min-height: 1624px;
+    }
   }
 }

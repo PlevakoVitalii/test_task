@@ -24,6 +24,8 @@ $large: 1024px;
 $primary_color: #f4e041;
 $secondary_color: #00bdd3;
 $background_color: #f8f8f8;
+$button_hover: #ffe302;
+$button_disabled: #b4b4b4;
 
 %buttons {
   background-color: $primary_color;
@@ -35,10 +37,10 @@ $background_color: #f8f8f8;
   @extend %fontBody;
 
   &:hover {
-    background-color: #ffe302;
+    background-color: $button_hover;
   }
   &:disabled {
-    background-color: #b4b4b4;
+    background-color: $button_disabled;
     color: #fff;
   }
 }
