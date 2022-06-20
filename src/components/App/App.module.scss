@@ -57,20 +57,17 @@ $button_disabled: #b4b4b4;
 .container {
   width: 2560px;
   margin: 0 auto;
-  background-color: #ebb135;
+  background-color: $background_color;
   min-height: 100vh;
   min-width: 360px;
 
   @media (max-width: $large) {
     width: 1024px;
-    background-color: aqua;
   }
   @media (max-width: $medium) {
     width: 768px;
-    background-color: rgb(26, 255, 0);
   }
   @media (max-width: $small) {
     width: 360px;
-    background-color: rgb(135, 25, 238);
   }
 }

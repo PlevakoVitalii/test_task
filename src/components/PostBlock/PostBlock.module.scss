@@ -17,7 +17,7 @@
 
   form {
     width: 380px;
-    height: 651px;
+    height: 570px;
     margin-bottom: 50px;
     margin: 0 auto;
     .inputContainer {
@@ -59,10 +59,21 @@
     }
 
     .inputUploadContainer {
-      width: 380px;
-      height: 54px;
-      display: flex;
-      flex-direction: row;
+      .inputUploadFile {
+        width: 380px;
+        height: 54px;
+        margin-bottom: 50px;
+        background: #f8f8f8;
+        border: 1px solid #d0cfcf;
+        border-radius: 4px;
+      }
+      .inputUploadFile::-webkit-file-upload-button {
+        width: 110px;
+        height: 52px;
+        background: #f8f8f8;
+        border: 1px solid rgba(0, 0, 0, 0.87);
+        border-radius: 4px 0px 0px 4px;
+      }
     }
 
     button {
@@ -76,10 +87,39 @@
   }
 
   @media (max-width: $large) {
+    width: 904px;
+    height: 741px;
+    margin: 0 auto;
+    form {
+      height: 567px;
+    }
   }
 
   @media (max-width: $medium) {
+    width: 704px;
+    height: 741px;
+    margin: 0 auto;
+    form {
+      height: 567px;
+    }
   }
   @media (max-width: $small) {
+    width: 328px;
+    height: 781px;
+    margin: 0 auto;
+    form {
+      width: 328px;
+      height: 567px;
+      .inputContainer {
+        input {
+          width: 328px;
+        }
+      }
+      .inputUploadContainer {
+        .inputUploadFile {
+          width: 328px;
+        }
+      }
+    }
   }
 }
