@@ -2,7 +2,7 @@ import React from 'react';
 
 import style from './PostBlock.module.scss'
 
-const PostBlock = () => {
+const PostBlock = ({ positions }) => {
   return (
     <div className={style.postBlock}>
       <h2>Working with POST request</h2>
@@ -20,23 +20,14 @@ const PostBlock = () => {
         <span className={style.inputRadioContainerHeader}>Select your position</span>
 
         <div className={style.inputRadioContainer}>
-          <div >
+
+          {positions.map((position) => <div key={Math.random()} >
             <input type="radio" id="Frontend_developer" name="position" value="Frontend developer"
               onChange={(e) => e.target.value} />
-            <label htmlFor="Frontend_developer">Frontend developer</label>
+            <label htmlFor="Frontend_developer">{position.name}</label>
           </div>
-          <div>
-            <input type="radio" id="Backend_developer" name="position" value="Backend developer" />
-            <label htmlFor="Backend_developer">Backend developer</label>
-          </div>
-          <div>
-            <input type="radio" id="Designer" name="position" value="Designer" />
-            <label htmlFor="Designer">Designer</label>
-          </div>
-          <div>
-            <input type="radio" id="QA" name="position" value="QA" />
-            <label htmlFor="QA">QA</label>
-          </div>
+          )}
+
         </div>
 
         <div className={style.inputUploadContainer}>

@@ -17,6 +17,14 @@
     height: 70px;
     margin-bottom: 20px;
   }
+  .cardUserInfo {
+    width: 242px;
+    height: 124px;
+    padding: 0 20;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre;
+  }
   p {
     margin: 0;
   }

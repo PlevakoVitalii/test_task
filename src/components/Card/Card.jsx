@@ -2,17 +2,18 @@ import React from 'react';
 
 import style from './Card.module.scss'
 
-import CardImg from '../../assets/CardImg.png'
-
-const Card = () => {
+const Card = ({ user }) => {
+  console.log(user)
   return (
-    <div className={style.card}>
-      <img src={CardImg} alt='CardImg' />
-      <p className={style.name}>CardImg</p>
-      <p>Leading specialist of the department of cent...
-        frontend_develop@gmail.com
-        +38 (098) 278 44 24</p>
 
+    <div className={style.card}>
+      <img src={user.photo} alt='CardImg' />
+      <div className={style.cardUserInfo}>
+        <p className={style.name}>{user.name}</p>
+        <p>{user.position} </p>
+        <p>{user.email}</p>
+        <p> {user.phone}</p>
+      </div>
     </div>
   )
 }
